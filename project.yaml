@@ -8,9 +8,10 @@ actions:
         dataset: output/dataset.csv.gz
 
   stata_explore:
-    run: stata-mp:17 analysis/explore.do
+    run: stata-mp:17:v1 analysis/explore.do
     needs: [generate_dataset]
     outputs:
       moderately_sensitive:
         summary: output/processed/stata_summary.csv
         counts: output/processed/stata_counts.csv
+

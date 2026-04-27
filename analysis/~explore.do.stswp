@@ -17,3 +17,5 @@ outsheet using output/processed/stata_summary.csv, replace
 tabulate sex, matcell(freq)
 svmat freq, names(col)
 outsheet using output/processed/stata_counts.csv, replace
+
+replace 
